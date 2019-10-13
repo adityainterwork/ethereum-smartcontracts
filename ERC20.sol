@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.5.0;
 
 contract ERC20 {
     string public name;
@@ -18,8 +18,8 @@ contract ERC20 {
     }
 
     // string symbol, uint256 initialSupply, uint256 maximumSupply
-    constructor(string _name,
-        string _symbol,
+    constructor(string memory _name,
+        string memory _symbol,
         uint256 _initialSupply,
         uint256 _maximumSupply)
     public {
